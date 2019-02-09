@@ -5,11 +5,11 @@
 TARGET_PLATFORM:=i686
 #TARGET_PLATFORM:=x86_64
 
-DEPSDIR:=$HOME/legacy/mxe/usr/$TARGET_PLATFORM-w64-mingw32.static
-CC:=$HOME/legacy/mxe/usr/bin/$TARGET_PLATFORM-w64-mingw32.static-gcc
-CXX:=$HOME/legacy/mxe/usr/bin/$TARGET_PLATFORM-w64-mingw32.static-g++
-RANLIB=$HOME/legacy/mxe/usr/bin/$TARGET_PLATFORM-w64-mingw32.static-ranlib
-STRIP=/$HOME/legacy/mxe/usr/bin/$TARGET_PLATFORM-w64-mingw32.static-strip
+DEPSDIR:=$(HOME)/legacy/mxe/usr/$(TARGET_PLATFORM)-w64-mingw32.static
+CC:=$(HOME)/legacy/mxe/usr/bin/$(TARGET_PLATFORM)-w64-mingw32.static-gcc
+CXX:=$(HOME)/legacy/mxe/usr/bin/$(TARGET_PLATFORM)-w64-mingw32.static-g++
+RANLIB=$(HOME)/legacy/mxe/usr/bin/$(TARGET_PLATFORM)-w64-mingw32.static-ranlib
+STRIP=$(HOME)/legacy/mxe/usr/bin/$(TARGET_PLATFORM)-w64-mingw32.static-strip
 
 USE_UPNP:=1
 USE_WALLET:=1
